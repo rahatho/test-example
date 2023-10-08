@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import AuthForm from './conponents/AuthForm';
 
 function App() {
   const [outputText, setOutputText] = useState('Initial text');
@@ -9,6 +10,7 @@ function App() {
     <>
       <button onClick={updateTextHandler}>Click to change text</button>
       <p>{outputText}</p>
+      <AuthForm/>
     </>
   );
 }

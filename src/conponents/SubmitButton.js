@@ -8,9 +8,9 @@ function SubmitButton() {
     }
 
     return (
-        <buttor onClick={submitHandler}>
+        <button onClick={submitHandler}>
             {isSubmitted? 'Loading...':'Submit'}
-        </buttor>
+        </button>
 
     );
 };
