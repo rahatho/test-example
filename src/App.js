@@ -1,18 +1,24 @@
 import {useState} from 'react';
+import { ReactDOM } from 'react';
+//import { ReactDOM } 
 import AuthForm from './conponents/AuthForm';
 
+function Greeting(){
+  return (<p> Welcome to this book! </p>) ;
+};
+
 function App() {
-  const [outputText, setOutputText] = useState('Initial text');
-  function updateTextHandler(){
-    setOutputText('Text was changed');
-  }
+ 
+  
   return (
-    <>
-      <button onClick={updateTextHandler}>Click to change text</button>
-      <p>{outputText}</p>
-      <AuthForm/>
-    </>
+    <div>
+      <h2>Hello World!</h2>
+      <Greeting/>
+    </div>
   );
-}
+  };
 
 export default App;
+
+//const root = ReactDOM.createRoot(document.getElementById('app'));
+//root.render(<App/>);
